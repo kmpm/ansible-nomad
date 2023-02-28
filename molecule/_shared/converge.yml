@@ -1,0 +1,12 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Inlclude role"
+      include_role:
+        name: ansible-nomad
+
+  vars:
+    # TODO: Probably we need to install syslog-ng/rsyslog first
+    nomad_syslog_enable: False
+    

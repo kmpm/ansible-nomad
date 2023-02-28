@@ -60,6 +60,7 @@ nomad_data_dir: "/var/nomad"
 nomad_plugin_dir: "{{ nomad_data_dir }}/plugins"
 nomad_lockfile: "/var/lock/subsys/nomad"
 nomad_run_dir: "/var/run/nomad"
+nomad_facts_dir: "/etc/ansible/facts.d"
 
 ### Initialization and startup script templates
 nomad_systemd_template: nomad_systemd.service.j2
